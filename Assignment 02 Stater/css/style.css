@@ -64,15 +64,24 @@ section > .container {
 /* navbar session */
 nav.container {
   display: grid;
-  grid-template-columns: 120px 120px 300px 120px 120px;
+  grid-template-columns: 140px 140px 380px 140px 140px;
   justify-content: center;
   align-items: center;
   padding: 0;
+  position: relative;
 }
 
-.info-name {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.nav-avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 140px;
+  height: 150px;
+  box-shadow: 0px 0px 3px 1px #ccc;
 }
 
 .container-child {
