@@ -22,6 +22,12 @@ section > .container {
   text-align: center;
 }
 
+.section-title {
+  font-size: 1.7rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
 /* banner session */
 #banner {
   position: relative;
@@ -169,14 +175,15 @@ nav.container {
   color: #199cdb;
 }
 
-.personal-icon:hover {
+.personal-icon:hover,
+.personal-icon:hover i {
   color: #199edb54;
 }
 
 /* Job session */
 .job-container {
   display: grid;
-  grid-template-columns: repeat(3, 380px);
+  grid-template-columns: repeat(3, 343px);
   grid-template-rows: minmax(450px, 550px);
   justify-content: center;
   align-items: start;
@@ -187,7 +194,7 @@ nav.container {
 .job-card {
   height: 100%;
   border: 1px solid #cccccc45;
-  padding: 30px 40px;
+  padding: 30px 20px 30px 40px;
 }
 
 .job-title {
@@ -230,11 +237,6 @@ nav.container {
   font-style: italic;
 }
 
-.job-lists p {
-  color: #727272;
-  font-size: 0.9rem;
-}
-
 .highlight {
   color: #fff !important;
   background-color: #199cdb;
@@ -244,6 +246,8 @@ nav.container {
 
 .job-list-desc {
   line-height: 1.4;
+  color: #727272;
+  font-size: 0.9rem;
 }
 
 .job-hobby {
@@ -299,4 +303,164 @@ nav.container {
 .active {
   border: 2px solid #199cdb;
   background-color: #199cdb;
+}
+
+/* Certificate session */
+.cert-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 27px;
+}
+
+.cert-card {
+  padding: 16px;
+  display: flex;
+  width: 535px;
+}
+
+.cert-card:not(:last-child) {
+  border-bottom: 2px solid #d6c08d;
+}
+
+.cert-img {
+  display: flex;
+  width: 235px;
+  height: 110px;
+}
+
+.cert-card:nth-child(odd) {
+  padding-left: 0;
+}
+
+.cert-card:nth-child(odd) .cert-img {
+  justify-content: start;
+}
+
+.cert-card:nth-child(even) .cert-img {
+  padding-left: 20px;
+  border-left: 2px solid #d6c08d;
+}
+
+.cert-img img {
+  width: 90%;
+  height: 100%;
+}
+
+.cert-detail-desc {
+  line-height: 1.4;
+  color: #727272;
+  font-size: 0.9rem;
+}
+
+.cert-detail-title {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: rgba(12, 12, 12, 0.884);
+  font-weight: 600;
+}
+
+/* Project session */
+.project-cards {
+  /* display: flex;
+  width: 100%;
+  justify-content: space-between; */
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.project-card {
+  width: 330px;
+  min-height: 510px;
+}
+.project-card-img {
+  width: 100%;
+  height: 225px;
+}
+.project-detail {
+  margin-top: -5px;
+  height: 285px;
+}
+.project-title {
+  padding: 18px;
+  border: 1px solid #cccccc45;
+}
+
+.project-title h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: rgba(12, 12, 12, 0.884);
+  font-weight: 600;
+}
+.project-position {
+  padding: 18px;
+  border-left: 1px solid #cccccc45;
+  border-right: 1px solid #cccccc45;
+}
+
+.project-position span {
+  color: #727272;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-right: 18px;
+}
+
+.project-position span i {
+  margin-right: 10px;
+  color: #000;
+  font-weight: 700;
+}
+
+.project-desc {
+  border-collapse: collapse;
+  border: 1px solid #cccccc45;
+  height: 59%;
+}
+
+.project-desc td,
+.project-desc th {
+  color: #727272;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: start;
+  vertical-align: top;
+  border-top: 1px solid #cccccc45;
+  border-bottom: 1px solid #cccccc45;
+  padding: 10px;
+}
+
+.project-desc th {
+  width: 90px;
+}
+
+/* footer session */
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer-icon {
+  color: #727272;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.footer-icon i {
+  color: #199cdb;
+  font-size: 1.8rem;
+  margin-right: 5px;
+}
+
+.footer-icon:hover,
+.footer-icon:hover i {
+  color: #199edb54;
 }

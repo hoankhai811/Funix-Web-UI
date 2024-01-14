@@ -11405,7 +11405,7 @@ you can use the generic selector below, but it's slower:
   content: "\e03f";
 }
 
-.ic.profile-male:before {
+.ic-profile-male:before {
   content: "\e040";
 }
 
