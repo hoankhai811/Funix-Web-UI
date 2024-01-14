@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/font.css" />
     <title>Assignment 02</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+    </style>
   </head>
   <body>
     <div id="banner" style="padding: 50px">
@@ -18,15 +21,27 @@
 
     <section id="nav-bar">
       <nav class="container">
-        <a href="#">Thông tin</a>
-        <a href="#">Lý lịch</a>
-        <a href="#">Chứng chỉ</a>
-        <a href="#">Dự Án</a>
+        <a class="container-child" href="#personal-info"
+          ><i class="icon-user"></i>Thông tin</a
+        >
+        <a class="container-child" href="#job-info"
+          ><i class="ic-document"></i>Lý lịch</a
+        >
+        <div class="info-name">
+          <h1>Nguyễn Văn A</h1>
+          <span>Full Stack Developer</span>
+        </div>
+        <a class="container-child" href="#certificate"
+          ><i class="icon-mail"></i>Chứng chỉ</a
+        >
+        <a class="container-child" href="#project"
+          ><i class="icon-star-1"></i>Dự Án</a
+        >
       </nav>
     </section>
 
     <section id="about" class="bg-grey">
-      <div class="container">
+      <div class="about-container">
         <div id="target">
           <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
           <p>
@@ -37,7 +52,7 @@
             hoàn thành tốt nhất công việc được giao.
           </p>
         </div>
-        <div id="personal-info" style="margin-top: 20px">
+        <div id="personal-info">
           <h1 class="section-title">Thông tin cá nhân</h1>
           <ul class="mt-40 info">
             <li><span>Giới tính</span> : Nam</li>
@@ -47,29 +62,221 @@
             <li><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
             <li><span>Website</span> : https://abc.tech</li>
           </ul>
+          <div class="personal-icons">
+            <a
+              class="personal-icon"
+              target="_blank"
+              href="https://twitter.com/?lang=vi"
+              ><i class="icon-twitter"></i
+            ></a>
+            <a
+              class="personal-icon"
+              target="_blank"
+              href="https://vi-vn.facebook.com/"
+              ><i class="icon-facebook"></i
+            ></a>
+            <a
+              class="personal-icon"
+              target="_blank"
+              href="https://www.google.com/webhp?hl=vi&sa=X&sqi=2&pjf=1&ved=0ahUKEwiM0LiJyNyDAxWzslYBHVY5BmYQPAgJ"
+              ><i class="icon-googleplus-rect"></i
+            ></a>
+            <a
+              class="personal-icon"
+              target="_blank"
+              href="https://www.linkedin.com/"
+              ><i class="icon-linkedin-1"></i
+            ></a>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="job-info">
-      <div class="container">
-        <div style="margin-top: 20px">
-          <h1>Kinh nghiệm</h1>
+      <div class="job-container">
+        <div class="job-card">
+          <div class="job-title">
+            <h1>Kinh nghiệm</h1>
+            <i class="ic-toolbox"></i>
+          </div>
+          <div class="job-contents">
+            <ul class="job-content">
+              <li class="job-lists">
+                <h4 class="job-list-title">full stack developer - công ty y</h4>
+                <div class="job-timeline">
+                  <span>05/2022 - </span>
+                  <span class="highlight">Hiện tại</span>
+                </div>
+                <p class="job-list-desc">
+                  - Xây dựng, phát triển Website dựa trên thiết kế yêu cầu, đã
+                  có.
+                </p>
+                <p class="job-list-desc">
+                  - Phân tích thiết kế Database, sử dụng các hệ CSDL (mySQL, SQL
+                  Server, No SQL, ...) và viết được các câu truy vấn.
+                </p>
+                <p class="job-list-desc">
+                  - Sử dụng ngôn ngữ server-side (Python, Java,...) để xây dụng
+                  các Web Service
+                </p>
+              </li>
+              <li class="job-lists">
+                <h4 class="job-list-title">web designer - công ty x</h4>
+                <div class="job-timeline">
+                  <span>06/2021 - </span>
+                  <span>04/2022</span>
+                </div>
+                <p class="job-list-desc">Web Designer</p>
+                <p class="job-list-desc">
+                  - Thiết kế website dựa trên yêu cầu khách hàng.
+                </p>
+                <p class="job-list-desc">
+                  - Sử dụng các công cụ: Figma, Canvas, PTS.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div style="margin-top: 20px">
-          <h1>Học vấn</h1>
+        <div class="job-card">
+          <div class="job-title">
+            <h1>Học vấn</h1>
+            <i class="ic-pencil"></i>
+          </div>
+          <div class="job-contents">
+            <ul class="job-content">
+              <li class="job-lists">
+                <h4 class="job-list-title">FUNiX</h4>
+                <div class="job-timeline">
+                  <span>06/2021 - </span>
+                  <span>04/2022</span>
+                </div>
+                <p class="job-list-desc">Tốt nghiệp chứng chỉ Fullstack.</p>
+                <p class="job-list-desc">GPA: 9/10</p>
+              </li>
+              <li class="job-lists">
+                <h4 class="job-list-title">cử nhân - ĐH FPT</h4>
+                <div class="job-timeline">
+                  <span>06/2021 - </span>
+                  <span>04/2022</span>
+                </div>
+                <p class="job-list-desc">- Chuyên ngành: Kỹ thuật phần mềm.</p>
+                <p class="job-list-desc">- GPA: 3.2/4</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div style="margin-top: 20px">
-          <h1>Hoạt động</h1>
+        <div class="job-card">
+          <div class="job-title">
+            <h1>Hoạt động</h1>
+            <i class="ic-toolbox"></i>
+          </div>
+          <div class="job-contents">
+            <ul class="job-content">
+              <li class="job-lists">
+                <h4 class="job-list-title">FPT edu hackathon 2019</h4>
+                <div class="job-timeline">
+                  <span>06/2021 - </span>
+                  <span>04/2022</span>
+                </div>
+                <p class="job-list-desc">- Giải 3 bằng A</p>
+                <p class="job-list-desc">
+                  - Đề tài: Trang web về phân loại rác thải.
+                </p>
+              </li>
+              <li class="job-lists">
+                <h4 class="job-list-title">câu lạc bộ z</h4>
+                <div class="job-timeline">
+                  <span>06/2021 - </span>
+                  <span>04/2022</span>
+                </div>
+                <p class="job-list-desc">- Trưởng ban chuyên môn</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div style="margin-top: 20px">
-          <h1>Sở thích</h1>
+        <div class="job-card">
+          <div class="job-title">
+            <h1>Sở thích</h1>
+            <i class="ic-telescope"></i>
+          </div>
+          <div class="job-hobby">
+            <div class="job-icons">
+              <span class="job-icon">
+                <i class="icon-megaphone"></i>
+              </span>
+              <span class="job-icon-desc">Âm nhạc</span>
+            </div>
+            <div class="job-icons">
+              <span class="job-icon">
+                <i class="ic-strategy"></i>
+              </span>
+              <span class="job-icon-desc">Chơi game</span>
+            </div>
+            <div class="job-icons">
+              <span class="job-icon">
+                <i class="ic-hotairballoon"></i>
+              </span>
+              <span class="job-icon-desc">Du lịch</span>
+            </div>
+            <div class="job-icons">
+              <span class="job-icon">
+                <i class="ic-basket"></i>
+              </span>
+              <span class="job-icon-desc">Nấu ăn</span>
+            </div>
+          </div>
         </div>
-        <div style="margin-top: 20px">
-          <h1>Ngôn ngữ</h1>
+        <div class="job-card">
+          <div class="job-title">
+            <h1>Ngôn ngữ</h1>
+            <i class="ic-mic"></i>
+          </div>
+          <div class="job-contents">
+            <h4 class="job-list-title">tiếng anh - IELTS 7.0</h4>
+            <div class="job-rates">
+              <div class="job-rate active"></div>
+              <div class="job-rate active"></div>
+              <div class="job-rate"></div>
+            </div>
+            <h4 class="job-list-title">tiếng nhật - JLPT N4</h4>
+            <div class="job-rates">
+              <div class="job-rate active"></div>
+              <div class="job-rate"></div>
+              <div class="job-rate"></div>
+            </div>
+          </div>
         </div>
-        <div style="margin-top: 20px">
-          <h1>Kỹ năng</h1>
+        <div class="job-card">
+          <div class="job-title">
+            <h1>Kỹ năng</h1>
+            <i class="ic-tools-2"></i>
+          </div>
+          <div class="job-contents">
+            <h4 class="job-list-title">HTML/CSS: fundamental</h4>
+            <div class="job-rates">
+              <div class="job-rate active"></div>
+              <div class="job-rate"></div>
+              <div class="job-rate"></div>
+            </div>
+            <h4 class="job-list-title">javascript: internmediate</h4>
+            <div class="job-rates">
+              <div class="job-rate active"></div>
+              <div class="job-rate active"></div>
+              <div class="job-rate"></div>
+            </div>
+            <h4 class="job-list-title">nodeJS: Internmediate</h4>
+            <div class="job-rates">
+              <div class="job-rate active"></div>
+              <div class="job-rate active"></div>
+              <div class="job-rate"></div>
+            </div>
+            <h4 class="job-list-title">bootstrap 5: Fundamental</h4>
+            <div class="job-rates">
+              <div class="job-rate active"></div>
+              <div class="job-rate"></div>
+              <div class="job-rate"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
