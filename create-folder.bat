@@ -10,6 +10,7 @@ cd "Lab %input%"
 for /l %%i in (1,1,%input2%) do (
     mkdir "Lab %input%.%%i"
     echo ^<!DOCTYPE html^>^<html lang="en"^>^<head^>^<meta charset="UTF-8"^>^<meta name="viewport" content="width=device-width, initial-scale=1.0"^>^<title^>Lab %input%.%%i^</title^>^</head^>^<body^>^</body^>^</html^>^ > "Lab %input%.%%i\index.html"
+	echo /* CSS code here */ > "Lab %input%.%%i\style.css"
 )
 
 echo Folders and HTML files created successfully.
