@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 11.1</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is survey form</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="input your name"
+          id="name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="input your email"
+          id="email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Number</label>
+        <input
+          type="number"
+          name="number"
+          placeholder="input your number"
+          id="number"
+          min="0"
+          max="99"
+        />
+      </div>
+      <div class="form-group">
+        <p>option best role</p>
+        <select name="dropdown" id="dropdown">
+          <option value="student">student</option>
+          <option value="worker">worker</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>your expression</p>
+        <label
+          ><input type="radio" name="expression" value="happy" />happy</label
+        >
+        <label><input type="radio" name="expression" value="sad" />sad</label>
+      </div>
+      <div class="form-group">
+        <p>your worker</p>
+        <label
+          ><input type="checkbox" name="worker" value="sister" />sister</label
+        >
+        <label
+          ><input type="checkbox" name="worker" value="brother" />brother</label
+        >
+      </div>
+      <textarea
+        name="comment"
+        id="comment"
+        cols="30"
+        rows="10"
+        placeholder="your comment"
+      ></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
