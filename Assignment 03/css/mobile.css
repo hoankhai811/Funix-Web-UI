@@ -1,5 +1,16 @@
-@media (max-width: 425px) {
-  .background {
-    background: red !important;
+@media (max-width: 426px) {
+  .nav-avatar {
+    display: none;
+  }
+  nav.container {
+    width: 100%;
+    display: block;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container-child {
+    justify-content: flex-start;
+    padding-left: 20px;
   }
 }

@@ -193,7 +193,7 @@ nav.container {
 .job-container {
   display: grid;
   grid-template-columns: repeat(3, 343px);
-  grid-template-rows: minmax(450px, 550px);
+  grid-template-rows: minmax(450px, auto);
   justify-content: center;
   align-items: start;
   grid-gap: 20px;
@@ -372,16 +372,12 @@ nav.container {
 
 /* Project session */
 .project-cards {
-  /* display: flex;
-  width: 100%;
-  justify-content: space-between; */
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 .project-card {
   width: 330px;
-  min-height: 510px;
 }
 .project-card-img {
   width: 100%;
@@ -389,7 +385,6 @@ nav.container {
 }
 .project-detail {
   margin-top: -5px;
-  height: 285px;
 }
 .project-title {
   padding: 18px;
