@@ -179,16 +179,6 @@
 }
 
 /* Job session */
-/* .job-container {
-  display: grid;
-  grid-template-columns: repeat(3, 343px);
-  grid-template-rows: minmax(450px, auto);
-  justify-content: center;
-  align-items: start;
-  grid-gap: 20px;
-  margin: 35px 0 30px;
-} */
-
 .job-card {
   min-height: 21vh;
   height: 100%;
