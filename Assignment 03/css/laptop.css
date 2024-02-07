@@ -1,13 +1,19 @@
 @media (min-width: 769px) and (max-width: 1025px) {
-  .navbar-col:nth-child(even) {
-    border-left: none !important;
-    border-right: none !important;
-  }
   .goals-content {
     padding: 10px 0px 20px 10px;
   }
   .timeline-btn {
     width: 55px;
     height: 45px;
+  }
+}
+
+@media (min-width: 769px) {
+  .board {
+    height: 100vh;
+  }
+  .navbar-col:nth-child(even) {
+    border-left: none !important;
+    border-right: none !important;
   }
 }
