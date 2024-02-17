@@ -5,7 +5,9 @@
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
-
+.display-none {
+  display: none;
+}
 .bg-grey {
   background: #f7f7f7;
 }
@@ -456,7 +458,7 @@
   color: #199edb54;
 }
 
-.btn {
+.button {
   display: none;
 }
 

@@ -5,10 +5,11 @@ const $$ = document.querySelectorAll.bind(document);
 
 const jobCards = $$(".job-card");
 const projectCards = $$(".project-card");
+const btnSubmit = $(".btn-submit");
 
 jobCards.forEach((card) => {
   // Get the button element within the card
-  const button = card.querySelector(".btn");
+  const button = card.querySelector(".button");
   const content = card.querySelector(".job-contents");
   // Add mouseover event listener to the card
   card.addEventListener("mouseover", () => {
@@ -45,4 +46,19 @@ projectCards.forEach((project) => {
       localStorage.setItem("currentClickedProject", project.classList[1]);
     }
   });
+});
+
+btnSubmit.addEventListener("click", () => {
+  const infomation = $(".display-none");
+  const form = $(".form-email");
+  const inputForm = $(".form-control");
+  const regex =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  console.log("regex.test(inputForm.value) :>> ");
+  if (regex.test(inputForm.value)) {
+    infomation.classList.remove("display-none");
+    form.classList.add("display-none");
+  } else {
+    alert("Invalid Input Email");
+  }
 });
